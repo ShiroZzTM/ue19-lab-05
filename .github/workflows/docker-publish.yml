@@ -49,7 +49,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            ${{ secrets.DOCKER_USERNAME }}/football-data-app
+            ${{ secrets.DOCKER_USERNAME }}/ue19-lab-05
             ghcr.io/${{ github.repository }}
 
       # Étape 5 : Construction et publication des images Docker
