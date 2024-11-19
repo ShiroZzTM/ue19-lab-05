@@ -38,4 +38,4 @@ def get_random_competitions():
 if __name__ == "__main__":
     get_random_competitions()
 
-
+    # Test Action
