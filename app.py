@@ -37,3 +37,5 @@ def get_random_competitions():
 # Appel de la fonction
 if __name__ == "__main__":
     get_random_competitions()
+
+    # Test Action
