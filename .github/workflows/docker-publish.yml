@@ -10,8 +10,9 @@
 name: Publish Docker image
 
 on:
-  release:
-    types: [published]  # Déclenche l'action uniquement lors de la publication d'une release
+  push:
+    branches:
+      - main  # L'action se déclenche uniquement pour les pushs sur la branche main
 
 jobs:
   push_to_registries:
