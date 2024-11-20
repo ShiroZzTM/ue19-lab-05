@@ -56,4 +56,4 @@ jobs:
       - name: Scanne image Docker avec Aqua Trivi
         uses: aquasecurity/trivy-action@master # On utilise l'action "trivy" pour scanner l'image Docker
         with:
-          image-ref: ghcr.io/luffy0xcyber/ue19-lab-05/my-app:latest      
+          image-ref: ghcr.io/shirozztm/ue19-lab-05/my-app:latest      
