@@ -50,4 +50,10 @@ jobs:
         with:
           context: . # Utilise le répertoire courant pour construire l'image
           push: true
-          tags: ghcr.io/shirozztm/ue19-lab-05/my-app:latest # identifiant de l'image Docker taguée
+          tags: ghcr.io/shirozztm/ue19-lab-05/my-app:latest 
+
+      # Étape 5 : Scanner l'image Docker pour les vulnerabilites
+      - name: Scanne image Docker avec Aqua Trivi
+        uses: aquasecurity/trivy-action@master # On utilise l'action "trivy" pour scanner l'image Docker
+        with:
+          image-ref: ghcr.io/luffy0xcyber/ue19-lab-05/my-app:latest      
