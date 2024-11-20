@@ -43,4 +43,4 @@ jobs:
         with:
           context: . # Utilise le répertoire courant pour construire l'image
           push: true
-          tags: ghcr.io/ShiroZzTM/ue19-lab-05/my-app:latest # identifiant de l'image Docker taguée
+          tags: ghcr.io/shirozztm/ue19-lab-05/my-app:latest # identifiant de l'image Docker taguée
