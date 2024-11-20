@@ -18,8 +18,14 @@ on:
 
 jobs:
   push_to_registries:
-    # Environnement d'exécution : machine virtuelle Linux
+    name : Construire et publier une image Docker
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+      actions: read
+      id-token: write
 
     steps:
       # Étape 1 : Récupère le code source du dépôt
