@@ -40,4 +40,8 @@ jobs:
 
       # Étape 4 : Construire le conteneur et le publier sur le registre GitHub Packages
       - name: Construire le conteneur et le publier sur le registre GitHub Packages
-        uses: docker build -t ghcr.io/samada25/${{ github.event.repository.name }}:latest .
+        uses: docker/build-push-action@v5
+        with:
+          context: . # Utilise le répertoire courant pour construire l'image
+          push: true
+          tags: ghcr.io/shirozztm/ue19-lab-05/my-app:latest # identifiant de l'image Docker taguée
